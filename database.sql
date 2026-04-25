@@ -1,0 +1,13 @@
+CREATE DATABASE smk_mbs;
+
+CREATE TABLE kegiatan (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ judul VARCHAR(255),
+ tanggal DATE
+);
+
+CREATE TABLE struktur (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ nama VARCHAR(255),
+ jabatan VARCHAR(255)
+);
