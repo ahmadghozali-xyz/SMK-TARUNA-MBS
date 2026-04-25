@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Struktur Organisasi - SMK Taruna MBS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#2d6a4f;
+  --light:#d8f3dc;
+  --dark:#1b4332;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Poppins;
+  background:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  color:var(--green);
+}
+
+.logo img{width:35px}
+
+nav a{
+  margin:0 10px;
+  text-decoration:none;
+  color:var(--green);
+}
+
+/* SECTION */
+.section{
+  padding:50px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  text-align:center;
+  color:var(--green);
+  margin-bottom:20px;
+}
+
+/* STRUKTUR IMAGE */
+.struktur-img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:40px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+/* CARD */
+..card{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 10px 20px rgba(0,0,0,0.08);
+  text-align:center;
+  transition:0.3s;
+  border:2px solid #d8f3dc; /* aksen hijau */
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#2d6a4f;
+  box-shadow:0 15px 30px rgba(45,106,79,0.2);
+}
+.card h3{
+  color:#1b4332;
+  font-size:16px;
+}
+
+.card p{
+  color:#40916c;
+  font-weight:500;
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:contain;
+  background:#f5f5f5;
+}
+
+.card h3{
+  margin:10px 0 5px;
+  color:var(--dark);
+}
+
+.card p{
+  font-size:14px;
+  color:#555;
+  margin-bottom:10px;
+}
+
+/* ANIMATION */
+.fade{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.fade.show{
+  opacity:1;
+  transform:none;
+}
+
+/* FOOTER */
+.footer{
+  background:linear-gradient(135deg,#1b4332,#2d6a4f);
+  color:white;
+  padding:50px 20px 20px;
+  margin-top:50px;
+}
+
+.footer-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.footer-box h3{color:#ffd700}
+
+.footer-box a{
+  display:block;
+  color:white;
+  text-decoration:none;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="assets/images/logo.jpg">
+    SMK TARUNA MBS
+  </div>
+
+  <nav>
+    <a href="index.php">Beranda</a>
+    <a href="index.php#visi">Visi</a>
+    <a href="index.php#kegiatan">Kegiatan</a>
+    <a href="#">Struktur</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="section fade">
+  <h2>Struktur Organisasi</h2>
+
+  <img src="assets/images/images2/Struktur Organisasi.jpg" class="struktur-img">
+
+  <div class="grid">
+
+    <!-- KEPALA SEKOLAH -->
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Budimansyah,M.Pd. ( Kepala Sekolah ).jpeg">
+      <h3>Budimansyah, M.Pd</h3>
+      <p>Kepala Sekolah</p>
+    </div>
+
+    <!-- TATA USAHA -->
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Evi Yanti Saputri,A.Md.Kom. ( Tata Usaha ).jpeg">
+      <h3>Evi Yanti Saputri</h3>
+      <p>Tata Usaha</p>
+    </div>
+
+    <!-- GURU -->
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Verli Novaroza,S.Pd..jpeg">
+      <h3>Verli Novaroza</h3>
+      <p>Guru</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Abdul Hadi Azwar,S.Kom..jpeg">
+      <h3>Abdul Hadi Azwar</h3>
+      <p>Guru</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Algafar, S.Pd.,M.M..jpeg">
+      <h3>Algafar</h3>
+      <p>Guru</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Desriyanti,S.Pd..jpeg">
+      <h3>Desriyanti</h3>
+      <p>Guru</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Drs. Ridar Putra..jpeg">
+      <h3>Drs. Ridar Putra</h3>
+      <p>Guru</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Fitrawati Azwar,S.Si.,M.M..jpeg">
+      <h3>Fitrawati Azwar</h3>
+      <p>Guru</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Irwandy,S.Pd..jpeg">
+      <h3>Irwandy</h3>
+      <p>Guru</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/M. Aulia Daffa,A.Md..jpeg">
+      <h3>M. Aulia Daffa</h3>
+      <p>Guru</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Nanda Saputra,S.Pd..jpeg">
+      <h3>Nanda Saputra</h3>
+      <p>Guru</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/images2/Profil Guru/Parlaungan Harahap,S.Si..jpeg">
+      <h3>Parlaungan Harahap</h3>
+      <p>Guru</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h3>SMK Taruna MBS</h3>
+      <p>Membentuk generasi disiplin dan berakhlak mulia.</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Kontak</h3>
+      <p>0812 7642 668</p>
+      <p>0852 6554 4478</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Menu</h3>
+      <a href="index.php">Beranda</a>
+      <a href="index.php#visi">Visi</a>
+      <a href="index.php#kegiatan">Kegiatan</a>
+      <a href="#">Struktur</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 SMK Taruna MBS
+  </div>
+</footer>
+
+<script>
+// ANIMASI
+let items=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+  items.forEach(el=>{
+    let top=el.getBoundingClientRect().top;
+    if(top<window.innerHeight-100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+<script>
+// ANIMASI
+let items=document.querySelectorAll('.fade');
+
+function showOnLoad(){
+  items.forEach(el=>{
+    let top=el.getBoundingClientRect().top;
+    if(top<window.innerHeight){
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll',showOnLoad);
+window.addEventListener('load',showOnLoad);
+</script>
+</body>
+</html>
